@@ -184,7 +184,29 @@ body{background: #f1f1f1;}
 
 /* FOOTER */
 
-#footer{
+.list{
+    height: 5vh;
+    background: #ddd;
+}
+.list ul li{
+    float: left;
+    list-style: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.list ul li a{
+    display: block;
+    line-height: 5vh;
+    padding:0 10px;
+    display: block;
+    color: #666;
+}
+.list ul li a:hover{
+    color: #000;
+}
+
+.text{
     height: 10vh;
     background: #000;
     display: flex;
@@ -192,7 +214,7 @@ body{background: #f1f1f1;}
     justify-content: center;
 }
 
-#footer p{
+.text p{
     color: #fff;
     font-size: 15px;
     font-weight: bold;
