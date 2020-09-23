@@ -24,7 +24,10 @@
     </header>
 
     <div id="slide">
-        <h1>Barber</h1>
+        <div class="header">
+            <h1>Barber</h1>
+            <p>Description Barber</p>
+        </div>
         <div class="img"></div>
     </div>
     
@@ -38,7 +41,10 @@
                 <form action="#" method="post">
                     <input type="text" placeholder="Enter your name"/><br /><br />
                     <input type="tel" placeholder="Enter your phone number"><br /><br />
-                    <select>
+                    <label for="time">Choose a time</label><br /><br/>
+                    <input id="time" type="time"><br/><br/>
+                    <label for="service">Kind of service</label><br /><br />
+                    <select id="service" >
                         <option selected>Service</option>
                         <option>Cut Hair</option>
                         <option>Shave</option>
