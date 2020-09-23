@@ -54,7 +54,8 @@ body{background: #f1f1f1;}
 }
 .img{
     position: absolute;
-    background-image: url('img/slider04.jpg');
+    background-image:url('img/slider04.jpg');
+    background-color: orange;
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
@@ -142,4 +143,21 @@ body{background: #f1f1f1;}
     outline: none;
     cursor: pointer;
     border: 1px solid #ddd;
+}
+
+/* FOOTER */
+
+#footer{
+    height: 10vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer p{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
