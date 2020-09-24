@@ -31,8 +31,14 @@ if(text.length > number){
 var button = document.querySelectorAll("button")[0];
 
 button.addEventListener("click", function(){
-    if(text.length >= number){
-        console.log(text);
-        textModify.innerHTML = text;
+    if(button.innerHTML == "Read more"){
+        if(text.length >= number){
+            console.log(text);
+            textModify.innerHTML = text;
+            button.innerHTML = "Read less";
+        }
+    }else{
+        textModify.innerHTML = decreaseText+"...";
+        button.innerHTML = "Read more";
     }
 });
