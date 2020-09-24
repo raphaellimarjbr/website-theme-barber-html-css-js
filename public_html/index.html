@@ -10,14 +10,13 @@
 <body>
 
     <div id="information">
-        <div id="margin">
-            <ul>
-                <li><i class="fas fa-map-marker-alt"></i> Name of the street</li>
-                <li><i class="fas fa-envelope"></i> barber@contact.com.br</li>
-                <li><i class="fab fa-whatsapp"></i> 0000-0000</li>
-            </ul>
-        </div>
+        <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Name of the street</li>
+            <li><i class="fas fa-envelope"></i> barber@contact.com.br</li>
+            <li><i class="fab fa-whatsapp"></i> 0000-0000</li>
+        </ul>
     </div>
+
     <header id="header">
         <div id="margin">
             <div class="title">
@@ -26,7 +25,7 @@
             <div class="menu">
                 <ul>
                     <li><a href="#" title="Back to the beginning of the site">Home</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="#service">Services</a></li>
                     <li><a href="#">Agend</a></li>
                 </ul>
             </div>
@@ -43,9 +42,36 @@
     
     <div id="container">
         <div id="margin">
-            <div class="page">
-                <h1>Services</h1>
-            </div>
+            <a name="about">
+                <div class="page">
+                    <div class="about pageDisplay">
+                        <h1>About</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </a>
+            <a name="service">
+                <div class="page">
+                    <div class="services pageDisplay">
+                        <h1>Services</h1>
+                        <div id="card">
+                            <div class="service">
+                                <img src="./assets/img/icons/cutHair.svg"/>
+                                <h2>Cut Hair</h2>
+                            </div>
+                            <div class="service">
+                                <img src="./assets/img/icons/razor.svg"/>
+                                <h2>Shave</h2>
+                            </div>
+                            <div class="service">
+                                <img src="./assets/img/icons/beard.svg"/>
+                                <h2>Beard</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
             <div class="page">
                 <h1>Agend</h1>
                 <form action="#" method="post">
@@ -61,11 +87,6 @@
                     </select><br /><br />
                     <button>Agend Now</button>
                 </form>
-            </div>
-            <div class="page">
-                <h1>About</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <button>Read more</button>
             </div>
         </div>
     </div>
@@ -90,6 +111,8 @@
             <p>&copy; Barber 2020.</p>
         </div>
     </footer>
+
+    <script src="./assets/js.js"></script>
 
 </body>
 </html>
