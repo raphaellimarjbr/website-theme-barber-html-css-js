@@ -6,15 +6,6 @@ body{background: #f1f1f1;}
 
 /* HEADER */
 
-#information{
-    background: #ddd;
-    height: 5vh;
-}
-#information ul li{
-    list-style: none;
-    float: left;
-}
-
 #header{
     background: #000;
     height: 10vh;
@@ -66,7 +57,7 @@ body{background: #f1f1f1;}
 
 .img{
     position: absolute;
-    background-image:url('assets/img/slider04.jpg');
+    background-image:url('img/slider04.jpg');
     background-color: orange;
     background-size: contain;
     background-position: top;
