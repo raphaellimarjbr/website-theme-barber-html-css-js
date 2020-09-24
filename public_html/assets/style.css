@@ -103,7 +103,7 @@ body{background: #f1f1f1;}
 }
 
 .header p{
-    color: #ddd;
+    color: orange;
     text-transform: uppercase;
     font-size: 17px;
     font-weight: bold;
@@ -149,18 +149,13 @@ body{background: #f1f1f1;}
     color: #fff;
     transition:all ease-in-out 0.3s;
 }
-.page button:focus{
-    background: orange;
-    border: 3px solid orange;
-    color: #fff;
-    transition:all ease-in-out 0.3s;
-}
 
 .page form{
+    width:100%;
     margin:20px 0;
 }
 .page input{
-    width: 50%;
+    width: 49.5%;
     padding: 15px 0;
     text-align: center;
     outline:none;
@@ -225,10 +220,12 @@ body{background: #f1f1f1;}
 #card{
     display: flex;
     flex-flow: wrap;
+    margin:20px 0;
 }
 .service{
     width: 25%;
     margin: 20px 0;
+    text-align: center;
 }
 .service img{
     width: 50px;
@@ -236,6 +233,21 @@ body{background: #f1f1f1;}
     background: orange;
     padding: 15px;
     color: #fff;
+}
+.service h2{
+    margin:20px 0;
+    color:#333;
+    font-size:20px;
+}
+.service p{
+    color:#999;
+    padding:0 15px;
+}
+
+/* PAGE AGEND */
+
+.agend{
+    height:100vh;
 }
 
 /* FOOTER */
