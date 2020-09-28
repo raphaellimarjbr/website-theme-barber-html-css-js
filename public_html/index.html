@@ -20,13 +20,15 @@
     <header id="header">
         <div id="margin">
             <div class="title">
-                <h1><a href="#">Barber</a></h1>
+                <h1><a title="Back to the beginning of the site" href="#">Barber</a></h1>
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="#" title="Back to the beginning of the site">Home</a></li>
                     <li><a href="#service">Services</a></li>
-                    <li><a href="#">Agend</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#agend">Agend</a></li>
+                    <li><a href="#price">Prices</a></li>
+                    <li><a href="#galery">Galery</a></li>
                 </ul>
             </div>
         </div>
@@ -42,20 +44,9 @@
     
     <div id="container">
         <div id="margin">
-            <a name="about">
-                <div class="page">
-                    <div class="about pageDisplay">
-                        <h1>About</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                        <button>Read more</button>
-                    </div>
-                </div>
-            </a>
             <a name="service">
                 <div class="page">
                     <div class="services pageDisplay">
-                        <h1>Services</h1>
                         <div id="card">
                             <div class="service">
                                 <img src="./assets/img/icons/cutHair.svg"/>
@@ -81,27 +72,87 @@
                     </div>
                 </div>
             </a>
+        </div>
+        <a name="about">
             <div class="page">
-                <div class="agend pageDisplay">
-                    <h1>Agend</h1>
-                    <form action="#" method="post">
-                        <input type="text" placeholder="Enter your name"/>
-                        <input type="tel" placeholder="Enter your phone number"><br /><br />
-                        <label for="time">Choose a time</label><br /><br/>
-                        <input id="time" type="time"><br/><br/>
-                        <label for="service">Kind of service</label><br /><br />
-                        <select id="service" >
-                            <option selected>Service</option>
-                            <option>Cut Hair</option>
-                            <option>Shave</option>
-                        </select><br /><br />
-                        <button>Agend Now</button>
-                    </form>
+                <div class="about pageDisplay">
+                    <div id="margin">
+                        <div class="highlightedText">
+                            <h1>About</h1>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </a>
+        <a name="agend">
+            <div id="margin">
+                <div class="page">
+                    <div class="highlightedText">
+                        <h1>Agend</h1>
+                    </div>
+                    <div class="pageDisplay agend">
+                        <form action="#" method="post">
+                            <input type="text" placeholder="Name"/>
+                            <input type="text" placeholder="Phone number"/>
+                            <input type="text" placeholder="Service">
+                            <button>Agend now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a name="price">
+            <div class="page">
+                <div class="price pageDisplay">
+                    <div class="priceImage"></div>
+                    <div id="margin">
+                        <div class="priceTexts">
+                            <div class="highlightedText">
+                                <h1>Best prices</h1>
+                            </div>
+                            <ul>
+                                <li>Classic haircut <span>2.00€</span></li>
+                                <li>Classic haircut & hair washing <span>4.00€</span></li>
+                                <li>Hair washing <span>6.00€</span></li>
+                                <li>Classic haircut for long hair <span>8.00€</span></li>
+                                <li>Classic haircut for long hair <span>10.00€</span></li>
+                                <li>Classic shaving <span>12.00€</span></li>
+                                <li>Trimming & arranging long beard <span>14.00€</span></li>
+                                <li>Stylization & arranging beard <span>16.00€</span></li>
+                                <li>Classic haircut and shaving <span>18.00€</span></li>
+                                <li>Haircut & trimming long beard <span>20.00€</span></li>
+                                <li>Beard washing <span>22.00€</span></li>
+                                <li>Beard & hair washing <span>24.00€</span></li>
+                                <li>Trimming hair % beard <span>26.00€</span></li>
+                                <li>Classic haircut for long hair <span>28.00€</span></li>
+                                <li>Monthly maintenance of hair & beards <span>30.00€</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a name="galery">
+            <div class="highlightedText">
+                <h1>Galery</h1>
+            </div>
+            <div id="imagens">
+                <div class="image">
+                    <img src="./assets/img/slider01.jpg" />
+                </div>
+                <div class="image">
+                    <img src="./assets/img/slider02.jpg" />
+                </div>
+                <div class="image">
+                    <img src="./assets/img/slider03.jpg" />
+                </div>
+                <div class="image">
+                    <img src="./assets/img/slider04.jpg" />
+                </div>
+            </div>
+        </a>
     </div>
-
     <footer id="footer">
         <div class="list">
             <div id="margin">
