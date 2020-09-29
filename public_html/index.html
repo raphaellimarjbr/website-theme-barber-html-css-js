@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/style.css"/>
 
     <script src="https://kit.fontawesome.com/dc0824ecd1.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -20,13 +21,15 @@
     <header id="header">
         <div id="margin">
             <div class="title">
-                <h1><a title="Back to the beginning of the site" href="#">Barber</a></h1>
+                <h1><a title="Back to the beginning of the site" href="./index.html">Barber</a></h1>
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="#service">Home</a></li>
-                    <li><a href="#about">Blog</a></li>
-                    <li><a href="#">Products</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#agend">Agend</a></li>
+                    <li><a href="#price">Prices</a></li>
+                    <li><a href="#galery">Galery</a></li>
                 </ul>
             </div>
         </div>
@@ -42,7 +45,7 @@
     
     <div id="container">
         <div id="margin">
-            <a name="service">
+            <div id="service">
                 <div class="page">
                     <div class="services pageDisplay">
                         <div id="card">
@@ -69,9 +72,10 @@
                         </div>
                     </div>
                 </div>
-            </a>
+            </div>
         </div>
-        <a name="about">
+
+        <div id="about">
             <div class="page">
                 <div class="about pageDisplay">
                     <div id="margin">
@@ -82,14 +86,15 @@
                     </div>
                 </div>
             </div>
-        </a>
-        <a name="agend">
+        </div>
+
+        <div id="agend">
             <div id="margin">
                 <div class="page">
                     <div class="highlightedText">
                         <h1>Agend</h1>
                     </div>
-                    <div class="pageDisplay agend">
+                    <div class="pageDisplay agend" id="agend">
                         <form action="#" method="post">
                             <input type="text" placeholder="Name"/>
                             <input type="text" placeholder="Phone number"/>
@@ -99,8 +104,9 @@
                     </div>
                 </div>
             </div>
-        </a>
-        <a name="price">
+        </div>
+
+        <div id="price">
             <div class="page">
                 <div class="price pageDisplay">
                     <div class="priceImage"></div>
@@ -130,8 +136,9 @@
                     </div>
                 </div>
             </div>
-        </a>
-        <a name="galery">
+        </div>
+
+        <div id="galery">
             <div class="highlightedText">
                 <h1>Galery</h1>
             </div>
@@ -149,8 +156,9 @@
                     <img src="./assets/img/slider04.jpg" />
                 </div>
             </div>
-        </a>
+        </div>
     </div>
+
     <footer id="footer">
         <div class="list">
             <div id="margin">

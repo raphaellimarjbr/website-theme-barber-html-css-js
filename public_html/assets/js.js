@@ -1,4 +1,4 @@
-/* EFFECT SCROLL MENU */
+// EFFECT SCROLL MENU
 
 window.onscroll = function()
 {
@@ -18,4 +18,26 @@ window.onscroll = function()
 
     Menu();
 
+}
+
+// EFFECT SCROLL PAGE
+
+const linkMenu = document.querySelectorAll(".menu ul li a");
+
+console.log(linkMenu);
+
+for (const link of linkMenu){
+    link.addEventListener("click", clickMenu);
+}
+
+function clickMenu(e){
+    e.preventDefault();
+
+    const href = this.getAttribute("href");
+    const offsetTop = document.querySelector(href).offsetTop;
+
+    scroll({
+        top: offsetTop,
+        behavior: "smooth"
+    });
 }
